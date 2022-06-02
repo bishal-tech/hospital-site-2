@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/img/favicon">
+
+    <!-- Css import start here  -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- Font awsome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+        integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Slick slider cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"
+        integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
+        integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <title>Hospital Site</title>
+</head>
+
+<body>
+
+    <header id="header">
+
+        <div class="container top-header ">
+            <a href="index.html">
+                <div class="logo">
+                    <h1><span class="blue-text">Jiboan</span> <span class="sky-text">Rekha</span></h1>
+                    <p class="blue-text">Hospital</p>
+                </div>
+            </a>
+            <div class="header-btns">
+                <button class="btn cta-btn-1" type="button" data-bs-toggle="modal" data-bs-target="#covid">Covid
+                    Vactionation</button>
+                <button class="btn cta-btn-1" type="button" data-bs-toggle="modal" data-bs-target="#helth-checkup">
+                    Helth Checkup</button>
+                <button class="btn cta-btn-1" type="button" data-bs-toggle="modal"
+                    data-bs-target="#login">Reports</button>
+                <a href="#" class="btn cta-btn-2" id="app-btn">
+                    <h5>Book Appoinment</h5>
+                    <p>993257813</p>
+                </a>
+            </div>
+        </div>
+
+        <!-- -------------- here modal forms start  -->
+
+        <!-- Covid vactionation form start   -->
+        <div class="modal fade" id="covid" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content pb-2">
+                    <div class="modal-header ">
+                        <h3 class="modal-title sky-text" id=""><b>Vactionation Form</b></h3>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <form class="">
+                        <div class="modal-body ">
+                            <div class="form-group">
+                                <label for="full_name">Full name</label>
+                                <input type="text" class="form-control" placeholder="Full name">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="age">Age</label>
+                                <input type="number" class="form-control" placeholder="age">
+                            </div>
+                            <div class="form-group">
+                                <label for="aadhar_number">Aadhar number</label>
+                                <input type="number" class="form-control" placeholder="Aadhar number">
+                            </div>
+                            <div class="form-group">
+                                <label for="date">last date of vactination</label>
+                                <input type="date" maxlength="12/05/2022" class="form-control" placeholder="Date">
+                            </div>
+                            <div class="form-group">
+                                <label for="phn_number">Vactination Certificate</label>
+                                <input type="file" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="phn_number">Phone number</label>
+                                <input type="number" class="form-control" placeholder="Phone number">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email address</label>
+                                <input type="email" class="form-control" id="" aria-describedby="emailHelp"
+                                    placeholder="Enter email">
+                            </div>
+                            <div class="text-center">
+                                <button type="submit " class="">Submit</button>
+                            </div>
+                        </div>
+                        <div class="sky-text text-center"><a href="#">
+                                <h5 class="sky-text ">Forget password ?</h3>
+                            </a></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- Covid vactionation form End  -->
+
+        <!-- login form for Report button  -->
+        <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content pb-2">
+                    <div class="modal-header ">
+                        <h3 class="modal-title sky-text" id=""><b>Log in</b></h3>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <form class="">
+                        <div class="modal-body ">
+                            <div class="form-group">
+                                <label for="email1">Email address</label>
+                                <input type="email" class="form-control" id="email1" aria-describedby="emailHelp"
+                                    placeholder="Enter email">
+                            </div>
+                            <div class="form-group">
+                                <label for="password1">Password</label>
+                                <input type="password" class="form-control" id="password1" placeholder="Password">
+                            </div>
+                            <div class="text-center">
+                                <button type="submit " class="">Submit</button>
+                            </div>
+                        </div>
+                        <div class="sky-text text-center"><a href="#">
+                                <h5 class="sky-text ">Forget password ?</h3>
+                            </a></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- login form for Report button End  -->
+
+        <!-- Helth checkup form for Report button  -->
+        <div class="modal fade" id="helth-checkup" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content pb-2">
+                    <div class="modal-header ">
+                        <h3 class="modal-title sky-text" id=""><b>Fill the From</b></h3>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <form class="">
+                        <div class="modal-body ">
+                            <div class="form-group">
+                                <label for="full_name">Full name</label>
+                                <input type="text" class="form-control" placeholder="Full name">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="age">Age</label>
+                                <input type="number" class="form-control" placeholder="age">
+                            </div>
+
+                            <div class="input-group my-1">
+                                <div class="input-group-prepend">
+                                    <label class="input-group-text" for="inputGroupSelect01">Gender</label>
+                                </div>
+                                <select class="custom-select" id="inputGroupSelect01">
+                                    <option selected>Select ...</option>
+                                    <option value="1">Male</option>
+                                    <option value="2">Female</option>
+                                    <option value="3">Transgender</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="date">Date of Checkup</label>
+                                <input type="date" maxlength="12/05/2022" class="form-control" placeholder="Date">
+                            </div>
+                            <div class="form-group">
+                                <label for="files">Any old reports</label>
+                                <input type="file" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="phn_number">Phone number</label>
+                                <input type="number" class="form-control" placeholder="Phone number">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email address</label>
+                                <input type="email" class="form-control" id="" aria-describedby="emailHelp"
+                                    placeholder="Enter email">
+                            </div>
+                            <div class="text-center">
+                                <button type="submit " class="">Submit</button>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- Helth checkup form for Report button End  -->
+
+
+
+        <nav class=" navbar navbar-expand-lg navbar-light ">
+            <div class="container">
+                <button class="navbar-toggler " type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav  mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="all-doctors.html">Doctors</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Specality
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Physiologist</a></li>
+                                <li><a class="dropdown-item" href="#">Neorologist</a></li>
+                                <li><a class="dropdown-item" href="#">Genarel Physicican</a></li>
+                                <li><a class="dropdown-item" href="#">Cardiology</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">See all departments</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="academy.html">Academic</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="career.html">Career</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="blog.html">Blogs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#footer">Contact</a>
+                        </li>
+
+                        <li class="">
+                            <a class="btn emg-btn" href="tel:9932571302">Emergency Word</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!------------------------------------ banner section start here ---------------------------- -->
+    <section class="banner-section">
+        <div class="container py-5">
+            <div class="col-md-6 col-sm-12">
+                <h3 class="para-text">We want to go <span class="blue-text">Jibon</span><span
+                        class="sky-text">Rekha</span></h2>
+                    <hr>
+                    <h1 class="black-text">See life <br>
+                        <span class="sky-text">Differntly</span>
+                    </h1>
+
+                    <p class="para-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur vel
+                        laborum neque ea esse
+                        sapiente blanditiis quis velit, magnam ipsa a, aspernatur numquam?</p>
+                    <div class="d-flex cta-btns-box">
+                        <a class="btn cta-btn-2" href="#" data-bs-toggle="modal" data-bs-target="#helth-checkup">Book
+                            Appoinment</a>
+                        <a class="btn cta-btn-1" href="#">Learn More</a>
+                    </div>
+            </div>
+            <div class="col-md-6 col-sm-12"></div>
+        </div>
+    </section>
+
+
+
+    <!------------------------------------ Service section start here ---------------------------- -->
+
+    <section id="service">
+        <div class="container py-5">
+            <div class="row booking-section">
+                <div class="col-md-4 col-sm-12">
+
+                    <div class="booking-box">
+                        <img class="img-fluid" src="assets/img/nursing-home.png" alt="">
+                        <h3 class="black-text">Home Care Service</h3>
+                        <p class="para-text" class="">Specalize Home Care packdge are avilabe by click of a button
+                        </p>
+                        <a class="btn cta-btn-1" href="#" data-bs-toggle="modal" data-bs-target="#helth-checkup">Book
+                            Now</a>
+                    </div>
+
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <div class="booking-box bg-blue">
+                        <img class="img-fluid" src="assets/img/booking-icon.png" alt="">
+                        <h3>Book an Appoinment </h3>
+                        <p class="">Fill the form and get your Appoinment in 1 minutes</p>
+                        <a class="btn cta-btn-1" href="#" data-bs-toggle="modal" data-bs-target="#helth-checkup">Book
+                            Now</a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <div class="booking-box">
+                        <img class="img-fluid" src="assets/img/health.png" alt="">
+                        <h3 class="black-text">Health Checkup</h3>
+                        <p class="para-text">Specalize Health Checkup packdge are avilabe by click of a button</p>
+                        <a class="btn cta-btn-1" href="#" data-bs-toggle="modal" data-bs-target="#helth-checkup">Book
+                            Now</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!------------------------------------ About us section start here ---------------------------- -->
+
+    <section class="about-section">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-md-6 col-sm-12">
+                    <h2>About</h2>
+                    <hr>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis ipsa nemo numquam quia
+                        quod, nisi corporis soluta, provident dolore eos fuga, ab veritatis.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis cumque quo veritatis earum
+                        reiciendis neque nam laborum cum. Excepturi perspiciatis incidunt voluptas non.</p>
+                    <a class="btn cta-btn-1" href="#">Read more</a>
+                </div>
+                <div class="col-md-6 col-sm-12 text-center p-4">
+
+                    <div class="hospital-gallery-slider">
+                        <div class="h-g-slide">
+                            <img class="img-fluid " src="assets/img/banner1.jpg" alt="">
+
+                        </div>
+                        <div class="h-g-slide">
+                            <img class="img-fluid " src="assets/img/banner2.webp" alt="">
+                        </div>
+                        <div class="h-g-slide">
+                            <img class="img-fluid " src="assets/img/banner3.jpg" alt="">
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!------------------------------------ Service section start here ---------------------------- -->
+
+    <section>
+        <div class="container py-5">
+            <div class="text-center">
+                <h2 class=" mb-4 text-shadow"><span class="blue-text">Our </span><span class="sky-text">Services</span>
+                </h2>
+                <p class="para-text">It’s always the word of mouth that’s the best advice. Here are some of our…
+                </p>
+            </div>
+            <div class="service-slider d-flex justify-content-center">
+                <div class="service-slide">
+                    <h4 class="black-text mb-3">Genarel Physicican</h4>
+                    <img class="img-fluid mb-4" src="assets/img/i-digestion.png" alt="">
+                    <a class="btn cta-btn-1 d-block" href="#">Know more</a>
+                </div>
+                <div class="service-slide">
+                    <h4 class="black-text mb-3">Consultant Gynaecologist</h4>
+                    <img class="img-fluid mb-4" src="assets/img/i-blood-donation.png" alt="">
+                    <a class="btn cta-btn-1 d-block" href="#">Know more</a>
+                </div>
+                <div class="service-slide">
+                    <h4 class="black-text mb-3">General Surgery</h4>
+                    <img class="img-fluid mb-4" src="assets/img/i-medical-team.png" alt="">
+                    <a class="btn cta-btn-1 d-block" href="#">Know more</a>
+                </div>
+                <div class="service-slide">
+                    <h4 class="black-text mb-3">Cardiology</h4>
+                    <img class="img-fluid mb-4" src="assets/img/i-heart-attack.png" alt="">
+                    <a class="btn cta-btn-1 d-block" href="#">Know more</a>
+                </div>
+                <div class="service-slide">
+                    <h4 class="black-text mb-3">Chest & Diabetes Specialist</h4>
+                    <img class="img-fluid mb-4" src="assets/img/i-consultation.png" alt="">
+                    <a class="btn cta-btn-1 d-block" href="#">Know more</a>
+                </div>
+                <div class="service-slide">
+                    <h4 class="black-text mb-3">Neurologist</h4>
+                    <img class="img-fluid mb-4" src="assets/img/i-brain.png" alt="">
+                    <a class="btn cta-btn-1 d-block" href="#">Know more</a>
+                </div>
+                <div class="service-slide">
+                    <h4 class="black-text mb-3">Pediatrician & Neonatologist</h4>
+                    <img class="img-fluid mb-4" src="assets/img/i-brain2.png" alt="">
+                    <a class="btn cta-btn-1 d-block" href="#">Know more</a>
+                </div>
+                <div class="service-slide">
+                    <h4 class="black-text mb-3">Oral & Dental Surgeon</h4>
+                    <img class="img-fluid mb-4" src="assets/img/i-dental-cleaning.png" alt="">
+                    <a class="btn cta-btn-1 d-block" href="#">Know more</a>
+                </div>
+
+                <div class="service-slide">
+                    <h4 class="black-text mb-3">Gastroenterology & Gastroendosurgeons</h4>
+                    <img class="img-fluid mb-4" src="assets/img/i-digestion.png" alt="">
+                    <a class="btn cta-btn-1 d-block" href="#">Know more</a>
+                </div>
+
+                <div class="service-slide">
+                    <h4 class="black-text mb-3">Nose, Ear, Neck Specialist</h4>
+                    <img class="img-fluid mb-4" src="assets/img/i-skincare.png" alt="">
+                    <a class="btn cta-btn-1 d-block" href="#">Know more</a>
+                </div>
+                <div class="service-slide">
+                    <h4 class="black-text mb-3">Skin Specialist</h4>
+                    <img class="img-fluid mb-4" src="assets/img/i-skincare.png" alt="">
+                    <a class="btn cta-btn-1 d-block" href="#">Know more</a>
+                </div>
+                <div class="service-slide">
+                    <h4 class="black-text mb-3">Neuro Psychiatrist</h4>
+                    <img class="img-fluid mb-4" src="assets/img/i-brain2.png" alt="">
+                    <a class="btn cta-btn-1 d-block" href="#">Know more</a>
+                </div>
+                <div class="service-slide">
+                    <h4 class="black-text mb-3">Orthopedic Surgeon</h4>
+                    <img class="img-fluid mb-4" src="assets/img/i-orthopedics.png" alt="">
+                    <a class="btn cta-btn-1 d-block" href="#">Know more</a>
+                </div>
+            </div>
+            <div class="text-center">
+
+                <a class="btn cta-btn-2 px-4 " href="#">See all</a>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!------------------------------------ Core about section start here ---------------------------- -->
+
+    <section class="core-about-sec">
+        <div class="container py-5 ">
+
+            <div class="text-center">
+                <h2 class="">Jibon Rekha <span class="blue-text">Hospital</span></h2>
+                <p>During the last twelve years of existence had made a tremendous impact in the field of health care
+                    and allied services and ensuring the maintain the quality of bestservices by dynamic and best of
+                    it's class.
+                </p>
+            </div>
+
+
+            <div class="row mt-5">
+                <div class="col-md-6 col-sm-12">
+                    <ul>
+                        <li class=" core-points">
+                            <img class="img-fluid" src="assets/img/i-24-hours.png" alt="">
+                            <div>
+                                <h4>24hr Service</h4>
+                                <p>We are avilable for your help 24hr. </p>
+                            </div>
+                        </li>
+                        <li class=" core-points">
+                            <img class="img-fluid" src="assets/img/i-consultation.png" alt="">
+                            <div>
+                                <h4>Medical Consulting</h4>
+                                <p>We are here to discuss your medical queries </p>
+                            </div>
+                        </li>
+                        <li class=" core-points">
+                            <img class="img-fluid" src="assets/img/i-blood-donation.png" alt="">
+                            <div>
+                                <h4>Care with Love</h4>
+                                <p>Adding love to our service creates a miracle </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <ul>
+                        <li class=" core-points">
+                            <img class="img-fluid" src="assets/img/i-blood-test.png" alt="">
+                            <div>
+                                <h4>50+ Dialysis centre
+                                </h4>
+                                <p>Ready for numerable treatments at once
+                                </p>
+                            </div>
+                        </li>
+                        <li class=" core-points">
+                            <img class="img-fluid" src="assets/img/i-medical-history.png" alt="">
+                            <div>
+                                <h4>Reasonable Billing</h4>
+                                <p>Offering services at the best possible cost</p>
+                            </div>
+                        </li>
+                        <li class=" core-points">
+                            <img class="img-fluid" src="assets/img/i-medical-team.png" alt="">
+                            <div>
+                                <h4>Qualified Doctors</h4>
+                                <p>We have the best of doctors at your service</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!------------------------------------Blog section section start here ---------------------------- -->
+    <section>
+        <div class="container pt-5">
+            <div class="row blog-sec">
+                <div class="col-md-6 col-sm-12 blog-sec-content">
+                    <h2><span class="blue-text">News</span> <span class="sky-text">& Articles</span></h2>
+                    <p class="black-text">Read the latest news from ASG or regular ophthalmology news channels. Feel
+                        free to ask questions in comments for any news you find interesting.
+                    </p>
+                    <a class="btn cta-btn-1" href="blog.html">View All News & Articles</a>
+
+                </div>
+                <div class="col-md-6 col-sm-12 ">
+                    <!-- <form id="sub-form" class="" action="" method="post">
+                        <input type="text" name="sub-email" id="sub-email" placeholder="Email">
+                        <button class="btn" type="submit">Submit</button>
+                    </form> -->
+                </div>
+            </div>
+
+
+            <div class=" d-flex article-slider mt-4">
+
+                <div class="article-slide">
+                    <a href="#"><img class="img-fluid" src="assets/img/hospital-building.png" alt=""> </a>
+                    <div class="article-cont">
+                        <p>Date: 12/04/2022</p>
+                        <a href="#">
+                            <h3>Article title here Article title here</h3>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="article-slide">
+                    <a href="#"><img class="img-fluid" src="assets/img/hospital-building.png" alt=""> </a>
+                    <div class="article-cont">
+                        <p>Date: 12/04/2022</p>
+                        <a href="#">
+                            <h3>Article title here</h3>
+                        </a>
+                    </div>
+                </div>
+                <div class="article-slide">
+                    <a href="#"><img class="img-fluid" src="assets/img/hospital-building.png" alt=""> </a>
+                    <div class="article-cont">
+                        <p>Date: 12/04/2022</p>
+                        <a href="#">
+                            <h3>Article title here</h3>
+                        </a>
+                    </div>
+                </div>
+                <div class="article-slide">
+                    <a href="#"><img class="img-fluid" src="assets/img/hospital-building.png" alt=""> </a>
+                    <div class="article-cont">
+                        <p>Date: 12/04/2022</p>
+                        <a href="#">
+                            <h3>Article title here Article title hereArticle title here bis debsharasd</h3>
+                        </a>
+                    </div>
+                </div>
+                <div class="article-slide">
+                    <a href="#"><img class="img-fluid" src="assets/img/hospital-building.png" alt=""> </a>
+                    <div class="article-cont">
+                        <p>Date: 12/04/2022</p>
+                        <a href="#">
+                            <h3>Article title here</h3>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!------------------------------------Number counter section section start here ---------------------------- -->
+    <section class="number-counter-sec">
+        <div class="container py-5">
+            <div class="row number-counter-box ">
+                <div class="col-md-3 col-sm-12 number-counter ">
+                    <h2>2240+</h2>
+                    <p>Happy Paitents</p>
+                </div>
+                <div class="col-md-3 col-sm-12 number-counter">
+                    <h2>50+</h2>
+                    <p>Doctors</p>
+                </div>
+                <div class="col-md-3 col-sm-12 number-counter">
+                    <h2>300+</h2>
+                    <p>Beds</p>
+                </div>
+                <div class="col-md-3 col-sm-12 number-counter">
+                    <h2>25+</h2>
+                    <p>Year Experiance</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container py-5">
+            <div class="text-center">
+                <h2><span class="sky-text">Our </span><span class="blue-text">Doctors</span></h2>
+                <p class="black-text">It’s always the word of mouth that’s the best advice. Here are some of our…
+
+                </p>
+
+            </div>
+
+            <div class="doctor-slider d-flex py-4">
+
+                <div class="doctor-slide">
+                    <img class="img-fluid" src="assets/img/doctor6.jpg" alt="">
+                    <h3>Dr. Sima Malakar</h3>
+                    <p>M B B S , M.Sc (Delhi)</p>
+                    <a class="btn cta-btn-1" href="#">Book Appoinment</a>
+                </div>
+                <div class="doctor-slide">
+                    <img class="img-fluid" src="assets/img/doctor3.png" alt="">
+                    <h3>Dr. P C Das</h3>
+                    <p>M B B S , M.Sc (Delhi)</p>
+                    <a class="btn cta-btn-1" href="#">Book Appoinment</a>
+                </div>
+                <div class="doctor-slide">
+                    <img class="img-fluid" src="assets/img/doctor1.png" alt="">
+                    <h3>Dr. Mohan Shaha</h3>
+                    <p>M B B S , M.Sc (Delhi)</p>
+                    <a class="btn cta-btn-1" href="#">Book Appoinment</a>
+                </div>
+                <div class="doctor-slide">
+                    <img class="img-fluid" src="assets/img/doctor5.jpg" alt="">
+                    <h3>Dr. B K Modi</h3>
+                    <p>M B B S , M.Sc (Delhi)</p>
+                    <a class="btn cta-btn-1" href="#">Book Appoinment</a>
+                </div>
+                <div class="doctor-slide">
+                    <img class="img-fluid" src="assets/img/doctor1.png" alt="">
+                    <h3>Dr. Rathor Sign</h3>
+                    <p>M B B S , M.Sc (Delhi)</p>
+                    <a class="btn cta-btn-1" href="#">Book Appoinment</a>
+                </div>
+                <div class="doctor-slide">
+                    <img class="img-fluid" src="assets/img/doctor4.png" alt="">
+                    <h3>Dr. Bishal Deb</h3>
+                    <p>M B B S , M.Sc (Delhi)</p>
+                    <a class="btn cta-btn-1" href="#">Book Appoinment</a>
+                </div>
+            </div>
+
+            <div class="text-center mt-5">
+                <a class="btn cta-btn-1" href="all-doctors.html">Explore more Doctors</a>
+
+            </div>
+        </div>
+    </section>
+
+    <div class="scroll-top-btn-box">
+        <a href="#header" class="scroll-top-btn">
+            <i class="fa-solid fa-arrow-up"></i>
+        </a>
+    </div>
+
+    <footer id="footer" class="pt-5 pb-2">
+        <div class="container">
+            <div class="row ">
+                <div class="col-md-4 col-sm-12 footer-sec">
+                    <a href="#">
+                        <img class="img-fluid f-logo" src="assets/img/logo.jpg" alt="">
+                    </a>
+                    <hr>
+                    <ul class="footer-1">
+                        <li><i class="fa-solid fa-location-dot "></i><a
+                                href="https://www.google.com/maps/place/Raiganj+Jeevan+Rekha+Diagnostic+PVT+LTD/@25.6244949,88.1462177,14z/data=!4m5!3m4!1s0x0:0x7eff9a030595d95c!8m2!3d25.6244949!4d88.1462177">Ukilpara
+                                Raigonj Uttar Dinajpur
+                                733134</a> </li>
+                        <li><i class="fa-solid fa-phone "></i><a href="tel:9932571302">7331232132</a> </li>
+                        <li><i class="fa-solid fa-envelope "></i><a
+                                href="mailto:jibonrekha@hospital.com">jibonrekha@hospital.com</a> </li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-sm-12 footer-sec">
+                    <h3>For Paitents</h3>
+                    <hr>
+                    <ul>
+                        <li><a href="">Adminsion Process</a></li>
+                        <li><a href="">Discharge Process</a></li>
+                        <li><a href="">Video Consultation</a></li>
+                        <li><a href="">Emergency</a></li>
+                        <li><a href="admin/index.html">Admin login</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-sm-12 footer-sec">
+                    <h3>Importent Links</h3>
+                    <hr>
+                    <ul>
+                        <li><a href="#" data-bs-toggle="modal" data-bs-target="#covid">Covid Vactionation </a></li>
+                        <li><a href="#" data-bs-toggle="modal" data-bs-target="#helth-checkup">Health Checkup</a></li>
+                        <li><a href="#" data-bs-toggle="modal" data-bs-target="#login">Reports</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="career.html">Career</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="copy-right text-center mt-4">
+                <div class="copy-right-nav">
+                    <a href="#"><span>Privecy polices </span></a>|
+                    <a href="#"><span>Payments & Refund Polices </span></a>|
+                    <a href="#"><span>Terms & Conditions </span></a>
+                </div>
+                <h4><span class="sky-text">JibonRekha Hospital</span> |<span class="sky-text"> All rights are
+                        reserved</span> </h4>
+            </div>
+        </div>
+    </footer>
+
+    <!-- import js here  -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <!-- import cutom js -->
+    <script src="assets/js/totalscript.js"></script>
+
+</body>
+
+</html>
